@@ -1,0 +1,87 @@
+/** {
+    outline: 1px solid red;
+}*/
+
+body {
+    background-color: #f0f8fa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+    margin: 5% 30%;
+    border-radius: 10px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.title-section {
+    text-align: center; /* 제목 가운데 정렬 */
+}
+
+.tasks {
+    width:200%;
+    display: flex;
+    justify-content: space-around; /* 내용 가운데 정렬 */
+}
+
+.tasks div {
+    flex: 1;
+    text-align: center; /* 내용 가운데 정렬 */
+}
+
+.task_section {
+    display: flex;
+    justify-content: space-between; /* 요소들을 양쪽 끝으로 정렬하고 간격을 둡니다. */
+    align-items: center; /* 세로 중앙 정렬을 위해 추가합니다. */
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.task_section p {
+    margin: 0; /* 텍스트의 기본 마진을 제거합니다. */
+    text-align: left; /* 텍스트를 왼쪽으로 정렬합니다. */
+}
+
+.task_section button {
+    margin-left: 10px; /* 버튼과 텍스트 사이의 간격을 설정합니다. */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 50vw;
+    border: 2px solid rgb(24, 77, 190); 
+    background-color: white; 
+    padding: 10px;
+    font-weight: bold; 
+}
+
+.complete-btn {
+    background-color: rgb(209, 222, 245); /* 배경색을 하늘색으로 설정 */
+    color: rgb(81, 79, 79);
+    border: none; /* 테두리 제거 */
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 20px; /* 완료 버튼과 입력 필드 사이의 간격 조정 */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+hr {
+    border: none; /* 기본 테두리 제거 */
+    border-top: 3px solid rgb(209, 222, 245); /* 상단에 2px 두께의 실선 테두리를 추가합니다. */
+    margin-bottom: 10px; /* hr 요소와 아래 요소 사이의 간격을 조절합니다. */
+    margin-left: 40px;
+    margin-right: 40px;
+}
