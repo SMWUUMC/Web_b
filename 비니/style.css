@@ -1,0 +1,24 @@
+.modal {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.modal_body {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.close_modal{
+    text-align:right;
+}
