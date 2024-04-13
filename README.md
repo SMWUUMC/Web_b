@@ -8,3 +8,4 @@
 - 📛 Rename: 파일 이름 변경
 - 🔀 Merge: 다른 브랜치와의 충돌 해결 후 Merge
 - ♻️ Refactor: 전면 수정
+- 📦 Test: 테스트용 코드
