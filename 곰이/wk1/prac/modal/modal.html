@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <h1>안녕하세요!</h1>
+    <h3>내용내용내용</h3>
+    <button onclick="openModal()">열기</button>
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="textDiv">
+                <h3>안녕하세요</h3>
+                <p>모달 내용이 어쩌구 저쩌구</p>
+            </div>
+            <div class="buttonDiv">
+                <button onclick="closeModal()">닫기</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openModal() {
+            const modals = document.getElementsByClassName("modal-wrapper");
+            for (let i = 0; i < modals.length; i++) {
+                modals[i].style.display = "flex";
+            }
+        }
+
+        function closeModal() {
+            const modals = document.getElementsByClassName("modal-wrapper");
+            for (let i = 0; i < modals.length; i++) {
+                modals[i].style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

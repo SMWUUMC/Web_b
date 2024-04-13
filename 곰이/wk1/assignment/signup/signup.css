@@ -1,0 +1,107 @@
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border-radius: 10px;
+    background-color: white;
+    width: 360px;
+    height: 500px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .innerBox {
+    width: 100%;
+}
+
+.box .innerBox h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.box .innerBox .line {
+    border: 0.1px solid gray;
+    width: 100%;
+    color: black;
+}
+
+.box .innerBox form {
+    /* border: 1px solid blue; */
+    width: 100%;
+
+    .input_id {
+        margin: 15px 0 0 0;
+    }
+
+    input {
+        width: 97%;
+    }
+
+    .validation {
+        display: none;
+        margin: 3px 0 0 0;
+        font-size: 10px;
+        color: #ff0000;
+    }
+
+    .buttonDiv {
+        display: flex;
+        justify-content: center;
+
+        button {
+            margin: 10px 0 0 0;
+            justify-self: center;
+            width: 200px;
+            height: 30px;
+        }
+    }
+}
+
+/* 모달 css */
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000055;
+}
+
+.modal {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 5px #00000015;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+}
+
+.modal .textDiv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .buttonDiv {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.modal .buttonDiv button {
+    width: 50px;
+}

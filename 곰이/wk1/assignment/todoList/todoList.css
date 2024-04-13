@@ -1,0 +1,64 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+#todo-input {
+    width: 600px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: 2px solid #1b1658;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.list-containers {
+    width: 600px;
+    display: flex;
+    padding: 0 50px;
+    gap: 60px;
+}
+
+.list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.list-container .title {
+    border-bottom: 3px solid black;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.list-container .list {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.list-container .list .item {
+    border-bottom: 3px solid rgb(180, 220, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    p {
+        margin: 10px 0;
+    }
+
+    button {
+        height: 25px;
+    }
+}

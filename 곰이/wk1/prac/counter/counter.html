@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+    <p id="number" style="font-size: 20px;">0</p>
+    <div class="buttonBox">
+        <button id="increase">+1</button>
+        <button id="decrease">-1</button>
+    </div>
+
+    <script>
+        const number = document.getElementById("number");
+        const increase = document.getElementById("increase");
+        const decrease = document.getElementById("decrease");
+        console.log(number);
+        console.log(increase);
+        console.log(decrease);
+
+        increase.onclick = () => {
+            console.log("increase가 클릭됨");
+            const prevNum = parseInt(number.innerText, 10);
+            number.innerText = prevNum + 1;
+        }
+
+        decrease.onclick = () => {
+            console.log("decrease가 클릭됨");
+            const prevNum = parseInt(number.innerText, 10);
+            number.innerText = prevNum - 1;
+        }
+    </script>
+</body>
+
+</html>
