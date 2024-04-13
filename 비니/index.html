@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>UI만들기
+        </title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <h2 id="number">0</h2>
+        <button id="increase">+1</button>
+        <button id="decrease">-1</button>
+        
+        <script>
+            const number = document.getElementById("number");
+            const increase = document.getElementById("increase");
+            const decrease = document.getElementById("decrease");
+
+       
+            increase.onclick = function(){
+                const current = parseInt(number.innerText, 10);
+                number.innerText=current+1;
+                console.log("increase가 클릭됨");
+            };
+            decrease.onclick = function(){
+                const current = parseInt(number.innerText, 10);
+                number.innerText=current-1;
+                console.log("decrease가 클릭됨");
+            };
+        </script>
+    </body>
+ 
+</html>
