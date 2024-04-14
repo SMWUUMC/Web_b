@@ -1,0 +1,55 @@
+body {
+    margin: 0 auto;
+    width: 700px;
+    margin-top: 10%;
+}
+
+.box {
+    background-color: #DFF0F5;
+    text-align: center;
+    border-radius: 10px;
+    height: 600px;
+    padding: 5%;
+}
+
+button {
+    padding: 10px 70px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+  }
+
+input {
+    background-color: #DFF0F5;
+    width: 40%;
+    line-height: normal;
+    height: 20px;
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+.failure-name, .failure-email, .failure-age-noninput, .failure-age-notnumber, .failure-age-negative, .failure-age-decimal, .failure-age-underage, .failure-pswd-short, .failure-pswd-long, .failure-pswd-condition, .failure-pswd_confirm{
+    color: red;
+    text-align: left;
+    margin-left: 30%;
+    font-size: small;
+
+}
+
+.success-name, .success-email, .success-age, .success-age, .success-pswd, .success-pswd_confirm {
+    color: green;
+    text-align: left;
+    margin-left: 30%;
+    font-size: small;
+}
+
+.text {
+    text-align: left;
+    margin-left: 30%;
+}

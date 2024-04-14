@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입 validation</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Mission1.css">
+    </head>
+
+    <body style="background-color: #ACD8E6;">
+        <div class="box">
+            <div class="title">
+                <h1>회원가입</h1>
+            </div>
+            <div class="name">
+                <div class="name text">이름</div>
+                <input type="text" name="username" id="username" required>  
+                <div class="failure-name hide">필수 입력 항목입니다!</div>
+                <div class="success-name hide">멋진 이름이네요!</div>
+            </div>
+            <div class="email">
+                <br>
+                <div class="email text">이메일</div>
+                <input type="text" name="useremail" id="useremail" required>
+                <div class="failure-email hide">올바른 이메일 형식이 아닙니다!</div>
+                <div class="success-email hide">올바른 이메일 형식입니다!</div>
+            </div>
+            <div class="age">
+                <br>
+                <div class="age text">나이</div>
+                <input type="text" name="userage" id="userage" required>
+                <div class="failure-age-noninput hide">나이를 입력해주세요!</div>
+                <div class="failure-age-notnumber hide">나이는 숫자 형식이어야 합니다!</div>
+                <div class="failure-age-negative hide">나이는 음수가 될 수 없습니다!</div>
+                <div class="failure-age-decimal hide">나이는 소수가 될 수 없습니다!</div>
+                <div class="failure-age-underage hide">미성년자는 가입할 수 없습니다!</div>
+                <div class="success-age hide">올바른 나이 형식입니다!</div>
+            </div>
+            <div class="password">
+                <br>
+                <div class="password text">비밀번호</div>
+                <input type="password" name="userpassword" id="userpassword" required>
+                <div class="failure-pswd-short hide">비밀번호는 최소 4자리 이상이어야 합니다</div>
+                <div class="failure-pswd-long hide">비밀번호는 최대 12자리까지 가능합니다</div>
+                <div class="failure-pswd-condition hide">영어, 숫자, 특수문자를 조합해주세요</div>
+                <div class="success-pswd hide">올바른 비밀번호입니다!</div>
+            </div>
+            <div class="password-confirm">
+                <br>
+                <div class="password-confirm text">비밀번호 확인</div>
+                <input type="password" name="pswd_confirm" id="pswd_confirm" required>
+                <div class="failure-pswd_confirm hide">비밀번호가 일치하지 않습니다.</div>
+                <div class="success-pswd_confirm hide">비밀번호가 일치합니다. </div>
+            </div>
+            <div class="button">
+                <p>
+                   <button>가입하기</button>
+                </p>
+            </div>
+        </div>
+        <script src="Mission1.js"></script>
+    </body>
+</html>
