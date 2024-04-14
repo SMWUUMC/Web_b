@@ -1,0 +1,81 @@
+:root {
+    --bg-color: #F1F3F8;
+    --line-color:#D6E0F0;
+    --font:'Raleway';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: var(--font);
+}
+
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 48px;
+    padding-bottom: 72px;
+    margin: 12px 10%;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.addToDo {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 48px;
+    width: 100%;
+}
+.addToDoInfo {
+    width: 70%;
+    line-height: normal;
+    padding: 4px;
+    height: 36px;
+    font-size: 24px;
+}
+.addToDoInfo::placeholder {
+    font-style: oblique;
+    font-family: var(--font);
+    color: var(--line-color);
+    margin: 2px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+}
+.list .activeToDo, .list .doneToDo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.list .activeTitle, .list .doneTitle {
+    padding: 6px;
+    border-bottom: 4px solid var(--line-color);
+}
+.list ul {
+    padding:0;
+    margin: 24px;
+}
+.list li {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: auto;
+    margin:8px;
+    padding: 6px;
+    border-bottom: 2px solid var(--line-color);
+}
+.list button {
+    border: none;
+    background-color: var(--line-color);
+    font-family: var(--font);
+    padding: 4px 6px;
+    margin-left: 12px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Mission2.css">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="mainTitle">UMC Study Plan</div>
+    <form action="#" class="addToDo" onsubmit="return addActiveList();">
+    <input type="text" class="addToDoInfo" placeholder="스터디 계획을 작성해보세요!">
+    </form>
+    
+    <div class="list">
+        <div class="activeToDo">
+            <div class="activeTitle">해야 할 일</div>
+            <ul type="none" class="listActive"></ul>
+        </div>
+        <div class="doneToDo">
+            <div class="doneTitle">해낸 일</div>
+                <ul type="none" class="listDone"></ul>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="Mission2.js"></script>
+</html>
